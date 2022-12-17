@@ -8,12 +8,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		context = new AnnotationConfigApplicationContext(AppConfig.class);
-		Employee employee=context.getBean(Employee.class);
-	    employee.setName("ABC");
-	    Address address=new Address();
-	    address.setCityName("Nag");
-	    employee.setAddress(address);
-	    System.out.println(employee.toString());
+		Company company=context.getBean(Company.class);
+	    System.out.println(company.toString());
 
 	}
 
